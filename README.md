@@ -1,4 +1,4 @@
-## A Primitive Model for World Cup 2018 Goals Prediction
+## A Model for World Cup 2018 Goals Prediction
 
 ### Introduction
 
