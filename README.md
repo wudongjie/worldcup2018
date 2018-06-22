@@ -46,6 +46,96 @@ I alse generated a feature importance graph shown below:
 
 This graph shows that the most important feature is 3-games moving average for number of goals. 
 
+My prediction for all games at the group stage:
+
+| scoreA         | teamA          | teamB          | scoreB | correct_win | correct_score | 
+|----------------|----------------|----------------|--------|-------------|---------------| 
+| 1              | Russia         | Saudi Arabia   | 2      | no          | no            | 
+| 0              | Egypt          | Saudi Arabia   | 2      |             |               | 
+| 3              | Uruguay        | Saudi Arabia   | 0      | yes         | no            | 
+| 1              | Russia         | Egypt          | 0      | yes         | no            | 
+| 3              | Uruguay        | Egypt          | 0      | yes         | no            | 
+| 0              | Russia         | Uruguay        | 3      |             |               | 
+| 1              | Portugal       | Spain          | 1      | yes         | no            | 
+| 1              | Morocco        | Spain          | 2      |             |               | 
+| 0              | Iran           | Spain          | 2      | yes         | no            | 
+| 1              | Portugal       | Morocco        | 1      | no          | no            | 
+| 1              | Iran           | Morocco        | 1      | no          | no            | 
+| 1              | Portugal       | Iran           | 0      |             |               | 
+| 2              | France         | Australia      | 1      | yes         | yes           | 
+| 0              | Peru           | Australia      | 1      |             |               | 
+| 2              | Denmark        | Australia      | 1      | no          | no            | 
+| 2              | France         | Peru           | 0      | yes         | no            | 
+| 1              | Denmark        | Peru           | 0      | yes         | yes           | 
+| 1              | France         | Denmark        | 1      |             |               | 
+| 1              | Argentina      | Iceland        | 1      | yes         | yes           | 
+| 1              | Croatia        | Iceland        | 1      |             |               | 
+| 0              | Nigeria        | Iceland        | 2      |             |               | 
+| 1              | Argentina      | Croatia        | 1      | no          | no            | 
+| 0              | Nigeria        | Croatia        | 2      | yes         | yes           | 
+| 1              | Argentina      | Nigeria        | 0      |             |               | 
+| 2              | Brazil         | Switzerland    | 0      | no          | no            | 
+| 0              | Costa Rica     | Switzerland    | 0      |             |               | 
+| 1              | Serbia         | Switzerland    | 1      |             |               | 
+| 2              | Brazil         | Costa Rica     | 0      |             |               | 
+| 0              | Serbia         | Costa Rica     | 0      | no          | no            | 
+| 2              | Brazil         | Serbia         | 0      |             |               | 
+| 1              | Germany        | Mexico         | 0      | no          | no            | 
+| 1              | Sweden         | Mexico         | 0      |             |               | 
+| 1              | Korea Republic | Mexico         | 0      |             |               | 
+| 1              | Germany        | Sweden         | 0      |             |               | 
+| 1              | Korea Republic | Sweden         | 2      | yes         | no            | 
+| 2              | Germany        | Korea Republic | 1      |             |               | 
+| 1              | Belgium        | Panama         | 0      | yes         | no            | 
+| 2              | Tunisia        | Panama         | 0      |             |               | 
+| 1              | England        | Panama         | 0      |             |               | 
+| 2              | Belgium        | Tunisia        | 2      |             |               | 
+| 1              | England        | Tunisia        | 2      | no          | no            | 
+| 1              | Belgium        | England        | 1      |             |               | 
+| 0              | Poland         | Senegal        | 1      | yes         | no            | 
+| 0              | Colombia       | Senegal        | 0      |             |               | 
+| 1              | Japan          | Senegal        | 1      |             |               | 
+| 0              | Poland         | Colombia       | 0      |             |               | 
+| 0              | Japan          | Colombia       | 0      | no          | no            | 
+| 1              | Poland         | Japan          | 1      |             |               | 
+| Total_Accuracy |                |                |        | 13/23       | 4/23          | 
+
+The Group Table after all matches:
+
+| Team           | Group | Point | Net Goals | Total Goals | 
+|----------------|-------|-------|-----------|-------------| 
+| Uruguay        | A     | 9     | 9         | 9           | 
+| Russia         | A     | 4     | -2        | 2           | 
+| Saudi Arabia   | A     | 4     | -2        | 2           | 
+| Egypt          | A     | 0     | -5        | 0           | 
+| Spain          | B     | 9     | 4         | 6           | 
+| Morocco        | B     | 4     | 0         | 3           | 
+| Portugal       | B     | 4     | 0         | 3           | 
+| Iran           | B     | 0     | -4        | 0           | 
+| Denmark        | C     | 7     | 3         | 5           | 
+| France         | C     | 5     | 2         | 4           | 
+| Australia      | C     | 4     | 0         | 3           | 
+| Peru           | C     | 0     | -5        | 0           | 
+| Argentina      | D     | 7     | 2         | 3           | 
+| Croatia        | D     | 5     | 2         | 4           | 
+| Iceland        | D     | 4     | 1         | 3           | 
+| Nigeria        | D     | 0     | -5        | 0           | 
+| Brazil         | E     | 9     | 4         | 4           | 
+| Switzerland    | E     | 4     | 0         | 2           | 
+| Serbia         | E     | 2     | -1        | 1           | 
+| Costa Rica     | E     | 1     | -3        | 0           | 
+| Germany        | F     | 9     | 5         | 6           | 
+| Sweden         | F     | 6     | 0         | 3           | 
+| Korea Republic | F     | 3     | -2        | 3           | 
+| Mexico         | F     | 0     | -3        | 0           | 
+| Belgium        | G     | 7     | 3         | 5           | 
+| Tunisia        | G     | 6     | 2         | 5           | 
+| England        | G     | 4     | 0         | 3           | 
+| Panama         | G     | 0     | -5        | 0           | 
+| Senegal        | H     | 9     | 3         | 4           | 
+| Japan          | H     | 2     | -1        | 2           | 
+| Poland         | H     | 2     | -1        | 1           | 
+| Colombia       | H     | 2     | -1        | 0           | 
 
 
 ### Further thoughts about predicting goals

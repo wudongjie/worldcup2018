@@ -1,49 +1,50 @@
-,target_score_x,target_team,opponent_team,target_score_y
-0,0.0,Russia,Saudi Arabia,2.0
-1,0.0,Egypt,Saudi Arabia,2.0
-2,3.0,Uruguay,Saudi Arabia,0.0
-3,1.0,Russia,Egypt,0.0
-4,3.0,Uruguay,Egypt,0.0
-6,0.0,Russia,Uruguay,3.0
-12,1.0,Portugal,Spain,2.0
-13,1.0,Morocco,Spain,2.0
-14,0.0,Iran,Spain,2.0
-15,1.0,Portugal,Morocco,1.0
-16,1.0,Iran,Morocco,1.0
-18,1.0,Portugal,Iran,0.0
-24,2.0,France,Australia,1.0
-25,0.0,Peru,Australia,1.0
-26,1.0,Denmark,Australia,1.0
-27,2.0,France,Peru,0.0
-28,1.0,Denmark,Peru,0.0
-30,1.0,France,Denmark,1.0
-36,1.0,Argentina,Iceland,0.0
-37,1.0,Croatia,Iceland,1.0
-38,0.0,Nigeria,Iceland,2.0
-39,1.0,Argentina,Croatia,1.0
-40,0.0,Nigeria,Croatia,2.0
-42,1.0,Argentina,Nigeria,0.0
-48,1.0,Brazil,Switzerland,0.0
-49,0.0,Costa Rica,Switzerland,0.0
-50,0.0,Serbia,Switzerland,1.0
-51,2.0,Brazil,Costa Rica,0.0
-52,0.0,Serbia,Costa Rica,0.0
-54,2.0,Brazil,Serbia,0.0
-60,1.0,Germany,Mexico,0.0
-61,1.0,Sweden,Mexico,0.0
-62,1.0,Korea Republic,Mexico,0.0
-63,1.0,Germany,Sweden,0.0
-64,1.0,Korea Republic,Sweden,1.0
-66,2.0,Germany,Korea Republic,1.0
-72,2.0,Belgium,Panama,0.0
-73,2.0,Tunisia,Panama,0.0
-74,1.0,England,Panama,0.0
-75,2.0,Belgium,Tunisia,2.0
-76,1.0,England,Tunisia,2.0
-78,1.0,Belgium,England,1.0
-84,1.0,Poland,Senegal,1.0
-85,0.0,Colombia,Senegal,0.0
-86,1.0,Japan,Senegal,1.0
-87,0.0,Poland,Colombia,0.0
-88,0.0,Japan,Colombia,0.0
-90,1.0,Poland,Japan,1.0
+target_score_x,target_team,opponent_team,target_score_y,correct_win,correct_score
+1,Russia,Saudi Arabia,2,no,no
+0,Egypt,Saudi Arabia,2,,
+3,Uruguay,Saudi Arabia,0,yes,no
+1,Russia,Egypt,0,yes,no
+3,Uruguay,Egypt,0,yes,no
+0,Russia,Uruguay,3,,
+1,Portugal,Spain,1,yes,no
+1,Morocco,Spain,2,,
+0,Iran,Spain,2,yes,no
+1,Portugal,Morocco,1,no,no
+1,Iran,Morocco,1,no,no
+1,Portugal,Iran,0,,
+2,France,Australia,1,yes,yes
+0,Peru,Australia,1,,
+2,Denmark,Australia,1,no,no
+2,France,Peru,0,yes,no
+1,Denmark,Peru,0,yes,yes
+1,France,Denmark,1,,
+1,Argentina,Iceland,1,yes,yes
+1,Croatia,Iceland,1,,
+0,Nigeria,Iceland,2,,
+1,Argentina,Croatia,1,no,no
+0,Nigeria,Croatia,2,yes,yes
+1,Argentina,Nigeria,0,,
+2,Brazil,Switzerland,0,no,no
+0,Costa Rica,Switzerland,0,,
+1,Serbia,Switzerland,1,,
+2,Brazil,Costa Rica,0,,
+0,Serbia,Costa Rica,0,no,no
+2,Brazil,Serbia,0,,
+1,Germany,Mexico,0,no,no
+1,Sweden,Mexico,0,,
+1,Korea Republic,Mexico,0,,
+1,Germany,Sweden,0,,
+1,Korea Republic,Sweden,2,yes,no
+2,Germany,Korea Republic,1,,
+1,Belgium,Panama,0,yes,no
+2,Tunisia,Panama,0,,
+1,England,Panama,0,,
+2,Belgium,Tunisia,2,,
+1,England,Tunisia,2,no,no
+1,Belgium,England,1,,
+0,Poland,Senegal,1,yes,no
+0,Colombia,Senegal,0,,
+1,Japan,Senegal,1,,
+0,Poland,Colombia,0,,
+0,Japan,Colombia,0,no,no
+1,Poland,Japan,1,,
+Total_Accuracy,,,,13/23,4/23

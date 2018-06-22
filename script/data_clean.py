@@ -139,28 +139,33 @@ world_cup = world_cup.replace({"IRAN": "Iran",
                                "Porugal": "Portugal",
                                "Columbia": "Colombia",
                                "Korea": "Korea Republic"})
+
+first_match = world_cup[['Team', 'First match \nagainst']]
+second_match = world_cup[['Team', 'Second match\n against']]
+third_match = world_cup[['Team', 'Third match\n against']]
+
+colnames = ['target_team', 'opponent_team']
+first_match.columns = colnames
+second_match.columns = colnames
+third_match.columns = colnames
+dfc = pd.concat([first_match, second_match, third_match], ignore_index=True)
+
+# Extract the latest match for the home team
 grouped = df.groupby('target_team').agg({'date':'max'})
 latest = grouped.merge(df, how='left',
                        left_on=['target_team', 'date'],
                        right_on=['target_team', 'date'])
 latest = latest[['target_team', 'tscore_3ma', 'tscore_5ma', 'tscore_10ma', 'tscore_15ma',
                  'tscore_30ma', 'target_score','opponent_score', 'opponent_team']]
-world_cup = world_cup.merge(latest,
-                            left_on=['Team'],
+latest = latest.rename(columns={'target_score': 'tscore_lastgame',
+                                'opponent_score': 'opscore_lastgame',
+                                'opponent_team': 'opteam_lastgame'})
+
+# Merge the latest match to world cup dataset
+dfc = dfc.merge(latest,
+                            left_on=['target_team'],
                             right_on=['target_team'])
-world_cup = world_cup.rename(columns={'target_score': 'tscore_lastgame',
-                                      'opponent_score': 'opscore_lastgame',
-                                      'opponent_team': 'opteam_lastgame'})
-mergedList = ['tscore_3ma', 'tscore_5ma', 'tscore_10ma', 'tscore_15ma',
-              'tscore_30ma', 'tscore_lastgame', 'opscore_lastgame', 'opteam_lastgame']
-first_match = world_cup[['Team', 'First match \nagainst'] + mergedList]
-second_match = world_cup[['Team', 'Second match\n against'] + mergedList]
-third_match = world_cup[['Team', 'Third match\n against'] + mergedList]
-colnames = ['target_team', 'opponent_team'] + mergedList
-first_match.columns = colnames
-second_match.columns = colnames
-third_match.columns = colnames
-dfc = pd.concat([first_match, second_match, third_match], ignore_index=True)
+
 dfc['is_home'] = dfc['target_team'] == 'Russia'
 dfc['is_home'] = dfc['is_home'].astype(int)
 dfc['is_world_cup'] = 1
