@@ -43,7 +43,7 @@ varname_X = ['is_home','is_world_cup',
              'tscore_3ma', 'tscore_5ma','tscore_10ma',
              'tscore_15ma','tscore_30ma'] + team_points
 X, y = df.loc[:, varname_X + categoricals + categoricals2], df['target_score']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1)
 print("Split Done! The shapes of X_train and Y_train are:")
 print(X_train.shape, y_train.shape)
 
@@ -146,11 +146,13 @@ df_out = df_out.merge(df_out2,
                       left_on=['opponent_team', 'target_team'],
                       right_on=['opponent_team', 'target_team'])
 length = df_out.shape[0]
+df_out.to_csv("../result/all_pred.csv")
 removeList = []
 for i in range(length):
     for j in range(i+1, length):
         if df_out['opponent_team'][i] == df_out['target_team'][j] and df_out['target_team'][i] == df_out['opponent_team'][j]:
             removeList.append(j)
 df_out = df_out.drop(removeList, 0)
+df_out[['target_score_x', 'target_score_y']] = df_out[['target_score_x', 'target_score_y']].astype(int)
 print(df_out)
-df_out.to_csv("../result/my_pred.csv")
+df_out.to_csv("../result/my_pred.csv", index=False)
