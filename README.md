@@ -51,54 +51,54 @@ My prediction for all games at the group stage:
 | scoreA         | teamA          | teamB          | scoreB | correct_win | correct_score | 
 |----------------|----------------|----------------|--------|-------------|---------------| 
 | 1              | Russia         | Saudi Arabia   | 2      | no          | no            | 
-| 0              | Egypt          | Saudi Arabia   | 2      |             |               | 
+| 0              | Egypt          | Saudi Arabia   | 2      | yes         | yes           | 
 | 3              | Uruguay        | Saudi Arabia   | 0      | yes         | no            | 
 | 1              | Russia         | Egypt          | 0      | yes         | no            | 
 | 3              | Uruguay        | Egypt          | 0      | yes         | no            | 
-| 0              | Russia         | Uruguay        | 3      |             |               | 
+| 0              | Russia         | Uruguay        | 3      | yes         | yes           | 
 | 1              | Portugal       | Spain          | 1      | yes         | no            | 
-| 1              | Morocco        | Spain          | 2      |             |               | 
+| 1              | Morocco        | Spain          | 2      | no          | no            | 
 | 0              | Iran           | Spain          | 2      | yes         | no            | 
 | 1              | Portugal       | Morocco        | 1      | no          | no            | 
 | 1              | Iran           | Morocco        | 1      | no          | no            | 
-| 1              | Portugal       | Iran           | 0      |             |               | 
+| 1              | Portugal       | Iran           | 0      | no          | no            | 
 | 2              | France         | Australia      | 1      | yes         | yes           | 
-| 0              | Peru           | Australia      | 1      |             |               | 
+| 0              | Peru           | Australia      | 1      | no          | no            | 
 | 2              | Denmark        | Australia      | 1      | no          | no            | 
 | 2              | France         | Peru           | 0      | yes         | no            | 
 | 1              | Denmark        | Peru           | 0      | yes         | yes           | 
-| 1              | France         | Denmark        | 1      |             |               | 
+| 1              | France         | Denmark        | 1      | yes         | no            | 
 | 1              | Argentina      | Iceland        | 1      | yes         | yes           | 
-| 1              | Croatia        | Iceland        | 1      |             |               | 
-| 0              | Nigeria        | Iceland        | 2      |             |               | 
+| 1              | Croatia        | Iceland        | 1      | no          | no            | 
+| 0              | Nigeria        | Iceland        | 2      | no          | no            | 
 | 1              | Argentina      | Croatia        | 1      | no          | no            | 
 | 0              | Nigeria        | Croatia        | 2      | yes         | yes           | 
-| 1              | Argentina      | Nigeria        | 0      |             |               | 
+| 1              | Argentina      | Nigeria        | 0      | yes         | no            | 
 | 2              | Brazil         | Switzerland    | 0      | no          | no            | 
-| 0              | Costa Rica     | Switzerland    | 0      |             |               | 
-| 1              | Serbia         | Switzerland    | 1      |             |               | 
-| 2              | Brazil         | Costa Rica     | 0      |             |               | 
+| 0              | Costa Rica     | Switzerland    | 0      | yes         | no            | 
+| 1              | Serbia         | Switzerland    | 1      | no          | no            | 
+| 2              | Brazil         | Costa Rica     | 0      | yes         | yes           | 
 | 0              | Serbia         | Costa Rica     | 0      | no          | no            | 
-| 2              | Brazil         | Serbia         | 0      |             |               | 
+| 2              | Brazil         | Serbia         | 0      | yes         | yes           | 
 | 1              | Germany        | Mexico         | 0      | no          | no            | 
-| 1              | Sweden         | Mexico         | 0      |             |               | 
-| 1              | Korea Republic | Mexico         | 0      |             |               | 
-| 1              | Germany        | Sweden         | 0      |             |               | 
+| 1              | Sweden         | Mexico         | 0      | yes         | no            | 
+| 1              | Korea Republic | Mexico         | 0      | no          | no            | 
+| 1              | Germany        | Sweden         | 0      | yes         | no            | 
 | 1              | Korea Republic | Sweden         | 2      | yes         | no            | 
-| 2              | Germany        | Korea Republic | 1      |             |               | 
+| 2              | Germany        | Korea Republic | 1      | no          | no            | 
 | 1              | Belgium        | Panama         | 0      | yes         | no            | 
-| 2              | Tunisia        | Panama         | 0      |             |               | 
-| 1              | England        | Panama         | 0      |             |               | 
-| 2              | Belgium        | Tunisia        | 2      |             |               | 
+| 2              | Tunisia        | Panama         | 0      | yes         | no            | 
+| 1              | England        | Panama         | 0      | yes         | no            | 
+| 2              | Belgium        | Tunisia        | 2      | no          | no            | 
 | 1              | England        | Tunisia        | 2      | no          | no            | 
-| 1              | Belgium        | England        | 1      |             |               | 
+| 1              | Belgium        | England        | 1      | no          | no            | 
 | 0              | Poland         | Senegal        | 1      | yes         | no            | 
-| 0              | Colombia       | Senegal        | 0      |             |               | 
-| 1              | Japan          | Senegal        | 1      |             |               | 
-| 0              | Poland         | Colombia       | 0      |             |               | 
+| 0              | Colombia       | Senegal        | 0      | no          | no            | 
+| 1              | Japan          | Senegal        | 1      | yes         | no            | 
+| 0              | Poland         | Colombia       | 0      | no          | no            | 
 | 0              | Japan          | Colombia       | 0      | no          | no            | 
-| 1              | Poland         | Japan          | 1      |             |               | 
-| Total_Accuracy |                |                |        | 13/23       | 4/23          | 
+| 1              | Poland         | Japan          | 1      | no          | no            | 
+| Total_Accuracy |                |                |        | 25/48       | 8/48          | 
 
 The Group Table after all matches:
 
